@@ -1,5 +1,4 @@
 <?php
-//namespace api;
 
 class Gateway {
   private $client = null;
@@ -32,7 +31,7 @@ class Gateway {
         return json_encode(["No records found"]);
       } 
     } 
-    catch (Elasticsearch\Common\Exceptions\Curl\CouldNotConnectToHost $e) 
+    catch (Exception $e) 
     {
       return $e->getMessage();
     }
