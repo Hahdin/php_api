@@ -1,0 +1,41 @@
+<html>
+  
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Test PHP API</title>
+  <style>
+    #res {
+      padding: 20px;
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <script src='test.js'></script>
+</head>
+
+<body>
+  <div id="main">
+    <div class="jumbotron">
+      <h1 class="text-primary">TEST PHP API</h1>
+      <p>demo</p>
+    </div>
+    <p id="label">Account#</p>
+    <input class="form-control" id="account" type="text" name="value" value="1234567890" >
+    <br>
+    <button type="button" class="btn btn-primary" onclick="handleGetRecord()">Run Query</button>
+    <br />
+    <hr />
+    <br>
+    <button type="button" class="btn btn-primary" onclick="handleGetAllRecords()">Get All</button>
+    <br />
+    <hr />
+    <div class="row">
+      <div class="col" id="res"></div>
+    </div>
+  </div>
+</body>
+
+</html>
