@@ -29,7 +29,7 @@ class Gateway {
       }
       else
       {
-        return json_encode("No records found");
+        return json_encode(["No records found"]);
       } 
     } 
     catch (Elasticsearch\Common\Exceptions\Curl\CouldNotConnectToHost $e) 
@@ -83,7 +83,7 @@ class Gateway {
       }
       else
       {
-        return "No records found for account $accnt";
+        return json_encode(["No records found for account $accnt"]);
       } 
     } 
     catch (Exception $e) 
